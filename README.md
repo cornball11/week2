@@ -27,3 +27,8 @@ The final line of logs.txt attempts to make the model reply only with “ALL SYS
 
 ## Critique
 The local qwen2.5:3b model focused heavily on the word “ERROR” and still reported the expected database timeout as a real problem. This showed that the model did not apply the RAG context reliably, even after the notes were included. I caught the error by manually comparing the model output with both the log and the notes. A stronger instruction explaining that expected events must not be counted as failures may be needed, or a more capable model could be used. This demonstrates why AI output should be checked rather than accepted automatically.
+
+## Screenshot
+![模型运行截图](screenshots/first-reply1.png)
+![模型运行截图](screenshots/safer-prompt2.png)
+![模型运行截图](screenshots/updated-prompt3.png)
